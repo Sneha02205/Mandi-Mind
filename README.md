@@ -17,27 +17,34 @@ MandiMind is a web application designed to empower farmers with actionable marke
 ### Core Features
 
 1.  **Crop & Location Input:** A simple interface for farmers to select their crop and current location.
-2.  **AI-Powered Price Forecasting:** The backend uses a machine learning model to predict future prices for the selected crop.
-3.  **Multi-Mandi Comparison:** The system fetches and compares prices from multiple nearby mandis.
-4.  **Net Profit Calculation:** It automatically calculates the estimated net profit after factoring in transportation costs.
-5.  **Clear & Simple Recommendation:** The application provides a straightforward recommendation:
+2.   **User-Authentication:** Firebase Authentication for secure login.
+3.   **AI Assistant:** A multilingual chatbot powered by Google Gemini API to enable personalized access and improve accessibility for diverse users.
+4.  **AI-Powered Price Forecasting:** The backend uses a machine learning model to predict future prices for the selected crop.
+5.  **Multi-Mandi Comparison:** The system fetches and compares prices from multiple nearby mandis.
+6.  **Net Profit Calculation:** It automatically calculates the estimated net profit after factoring in transportation costs.
+7.  **Clear & Simple Recommendation:** The application provides a straightforward recommendation:
     - **✅ SELL NOW:** If current prices are optimal, it highlights the best mandi to sell at.
     - **⏳ WAIT:** If the forecast predicts a price increase, it shows the potential profit gain from waiting.
+      
 
 ## 3. Demo Flow
 
 A user visiting the site will experience the following:
-
-1.  **Choose Crop & Location:** The farmer selects a crop (e.g., "Tomato") and their location.
-2.  **Get Prediction:** The system processes the request.
-3.  **View Results:** The application displays:
+1. **User Authentication:** Secure login has to be done to access the site.
+2.  **Choose Crop & Location:** The farmer selects a crop (e.g., "Tomato") and their location.
+3.  **Get Prediction:** The system processes the request.
+4.  **View Results:** The application displays:
     - The predicted price trend for the upcoming days.
     - The best mandi to sell at **today**.
     - A clear calculation of the net profit difference (e.g., "Wait 3 days for a potential +₹350/quintal profit").
-4.  **Receive Actionable Advice:** A final, clear message: **SELL NOW** or **WAIT**.
+5.  **Receive Actionable Advice:** A final, clear message: **SELL NOW** or **WAIT**.
+6.  **Direct AI assistance:** Using AI chatbot farmers can ask advice directly in their own language.
 
 ## 4. Tech Stack
 
 -   **Frontend:** HTML, CSS, JavaScript
 -   **Backend:** Flask for the API and to serve the ML model.
 -   **Machine Learning:** Random Forest for price prediction and handling nonlinear data well.
+-   **User-Authentication:** Firebase Authentication for secure login.
+-   **AI Assistant:** A multilingual chatbot powered by Google Gemini API to enable personalized access and improve accessibility for diverse users.
+-   
