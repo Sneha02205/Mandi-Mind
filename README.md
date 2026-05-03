@@ -39,5 +39,5 @@ A user visiting the site will experience the following:
 ## 4. Tech Stack
 
 -   **Frontend:** HTML, CSS, JavaScript
--   **Backend:** Python (Django/Flask) for the API and to serve the ML model.
--   **Machine Learning:** A time-series forecasting model for price prediction.
+-   **Backend:** Flask for the API and to serve the ML model.
+-   **Machine Learning:** Random Forest for price prediction and handling nonlinear data well.
